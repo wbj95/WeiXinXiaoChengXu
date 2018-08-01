@@ -1,0 +1,50 @@
+/* pages/news/newslist.wxss */
+.news {
+    padding: 26rpx 40rpx 26rpx 40rpx;
+}
+.news-item {
+    margin: 10rpx 0 10rpx 0;
+    
+    background-color: #fff;
+}
+.news-title {
+    color: #AAAAAA;
+}
+.news-item-pic {
+    padding: 20rpx 0 10rpx 20rpx;
+    width: 160rpx;
+    
+    float: left;
+}
+.news-item-image {
+    width: 100%;
+}
+.news-item-words {
+    width: 450rpx;
+    height: 65px;
+    float: right;
+    overflow-y: hidden;
+    padding: 20rpx 10rpx;
+}
+.news-item-title {
+    font-size: 11pt;
+    word-break: keep-all;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.news-item-content {
+    font-size: 8pt;
+    line-height: 13pt;
+    text-overflow:ellipsis; 
+    color: #a9a9a9;
+}
+.news-more-line {
+    padding-left: -26rpx important;
+}
+.news-details-content {
+    padding: 0 40rpx 100rpx 40rpx;
+}
+view{
+    word-break:break-all; overflow:auto;
+}

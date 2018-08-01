@@ -1,0 +1,280 @@
+@import "./weui.wxss";
+
+page {
+  background-color: #F8F8F8;
+  height: 100%;
+  font-size: 32rpx;
+  line-height: 1.6;
+}
+.page-body{
+  width: 100%;
+}
+.page-section{
+  width: 100%;
+  margin-bottom: 10rpx;
+}
+.page-section_center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page-section:last-child{
+  margin-bottom: 0;
+}
+.page-section-gap{
+  box-sizing: border-box;
+  padding: 0 30rpx;
+}
+.page-section-spacing{
+  box-sizing: border-box;
+  padding: 0 80rpx;
+}
+.page-section-title{
+  font-size: 28rpx;
+  color: #999999;
+  margin-bottom: 10rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+.page-section-gap .page-section-title{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.demo-text-1{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #1AAD19;
+  color: #FFFFFF;
+  font-size: 36rpx;
+}
+.demo-text-1:before{
+  content: 'A';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.demo-text-2{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #2782D7;
+  color: #FFFFFF;
+  font-size: 36rpx;
+}
+.demo-text-2:before{
+  content: 'B';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.demo-text-3{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #F1F1F1;
+  color: #353535;
+  font-size: 36rpx;
+}
+.demo-text-3:before{
+  content: 'C';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+button{
+  margin-bottom: 30rpx;
+}
+button:last-child{
+  margin-bottom: 0;
+}
+.page-section-title{
+  padding: 0;
+}
+swiper{
+  width: 100%;
+  height: 400rpx;
+}
+.swiper-item{
+  display: flex;
+  height: 150px;
+  width: 100%;
+}
+.swiper image {
+  height: auto;
+  width: 100%;
+}
+.page-section-title{
+  margin-top: 60rpx;
+  position: relative;
+}
+.info{
+  position: absolute;
+  right: 0;
+  color: #353535;
+  font-size: 30rpx;
+}
+.page-foot{
+  margin-top: 50rpx;
+}
+.kongdiannews{
+  display: flex;
+  text-align: left;
+  width: 100%;
+  justify-content: space-between;
+  padding: 2rpx;
+ border-top-width: 2px;
+  border-top-style: solid;
+  border-top-color: rgba(157, 169, 172, 0.171);
+   
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(157, 169, 172, 0.171);
+}
+.kongdian-image{
+  width: 25px;
+  height: 25px;
+ margin-right: 10px;
+
+}
+.seemore{
+  display: flex;
+  float: right;
+  align-items: flex-end;
+  padding: 10px;
+}
+.toutiao{
+  padding: 10px;
+  font-size: 20px;
+  border-left-width: 2px;
+  border-left-style: solid;
+  border-left-color: rgb(0, 195, 255);
+}
+.activity{
+  display: flex;
+  width: 100%;
+  padding: 2px;
+  justify-content: space-between;
+  border-top-width: 2px;
+  border-top-style: solid;
+  border-top-color: rgba(157, 169, 172, 0.171);
+   
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(157, 169, 172, 0.171);
+}
+.activity-span{
+  padding: 10px;
+  font-size: 20px;
+  border-left-width: 2px;
+  border-left-style: solid;
+  border-left-color: rgb(0, 195, 255);
+}
+.activity-image{
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+.activity-body{
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.activity-item{
+  width: 180px;
+  height: 140px;
+  padding: 5px;
+}
+
+.activity-item image{
+  width: 100%;
+ height: 100%;
+ position: relative;
+}
+
+.news-item-pic {
+    padding: 20rpx 0 10rpx 20rpx;
+    width: 170rpx;
+    
+    float:left;
+}
+.news-item {
+    margin: 10rpx 0 10rpx 0;
+    
+    background-color: #fff;
+}
+.news-item-image {
+    width: 100%;
+}
+.news-item-words {
+    width: 500rpx;
+    height: 65px;
+    float: right;
+    overflow-y: hidden;
+    padding: 20rpx 10rpx;
+}
+.news-item-content {
+    font-size: 8pt;
+    line-height: 13pt;
+    text-overflow:ellipsis; 
+    color: #a9a9a9;
+}
+.activity-item-text{
+  position: absolute;
+  bottom: 0px;
+  color: white;
+  width: 100%;
+  font-size: 15px;
+   background: -webkit-linear-gradient(bottom,rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0));
+   height: 70px;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   padding-left: 1%;
+   padding-right: 1%;
+   padding-bottom: 1%;
+}
+.quick-entry{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.logo{
+  width: 25px;
+  height: 25px;
+  padding: 10px;
+  border: 1px solid #0a99c9;
+    border-radius: 45px;
+    margin: 0 auto;
+   
+}
+.quick-entry-new{
+ float: left;
+    width: 45%;
+    text-align: center;
+    margin: 10px;
+    flex-direction: column;
+}
+.quick-entry-new text{
+  width: 25px;
+  height: 25px;
+}
+.quick-entry-activity{
+  float: left;
+    width: 45%;
+    text-align: center;
+    margin: 10px;
+}
+.quick-entry image{
+   width: 25px;
+  height: 25px;
+}
+

@@ -1,0 +1,27 @@
+
+ 
+<view class='inform'>
+  <view class='name'>
+        
+        <span>姓名:</span>
+        <input class="input" placeholder="请输入姓名"></input>
+    </view>
+    <view class="number">
+        <span>员工编号:</span>
+        <input class="input" placeholder="请输入员工编号"></input>
+    </view>
+    <view class='phone'>
+        <span>手机:</span>
+        <input class="input" placeholder="请输入手机号码"></input>
+    </view>
+   
+    <view class='sex'>
+        <span>性别:</span>
+       <radio-group class="radio-group" bindchange="radioChange">
+  <label class="radio" wx:for="{{items}}" wx:key="key">
+    <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+  </label>
+</radio-group>
+    </view>
+<button>修改资料</button>
+</view>

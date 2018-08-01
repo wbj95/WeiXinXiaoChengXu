@@ -1,0 +1,15 @@
+<!--pages/activity/activitylist.wxml-->
+<view class="activity">
+  <text class="activity-title">活动</text>
+   <block >
+    <view class='activity-body'>
+        <view class='activity-item' wx:for="{{activitylist}}">
+          <image src='{{item.src}}'></image>
+          <view >
+            <text>{{item.title}}</text>
+          </view>
+        </view>
+
+      </view>
+   </block>
+</view>

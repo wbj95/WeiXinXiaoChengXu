@@ -1,0 +1,38 @@
+<!--index/personal/personal.wxml-->
+<view class='index-contier'>
+    <view class="index-left">
+       
+    </view>
+    <view class="index-center">
+        <view class="logo"><image src='../image/contact.png'></image></view>
+        <view>小猪快跑</view>
+    </view>
+ 
+    <view class="index-right">
+       
+    </view>
+</view>
+ 
+<view class='inform'>
+  <view class='name'>
+        <span>姓名</span>
+        <span>王婷</span>
+    </view>
+    <view class="number">
+        <span>员工编号</span>
+        <span>4654</span>
+    </view>
+    <view class='phone'>
+        <span>手机</span>
+        <span>123456788</span>
+    </view>
+   
+    <view class='sex'>
+        <span>性别</span>
+        <span>女</span>
+    </view>
+ <view >
+ <button>解除绑定</button>
+ <button bindtap="bindViewTap">修改资料</button>
+ </view>
+</view>

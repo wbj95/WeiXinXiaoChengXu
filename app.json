@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/personal/personal",
+    "pages/message/message",
+    "pages/unbind/unbind",
+    "pages/news/newslist",
+    "pages/activity/activitylist",
+    "pages/news/news-details/news-details"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "上汽通用五菱空电部",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "#459ae9",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "pages/image/home-noselect.png",
+        "selectedIconPath": "pages/image/home-select.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "iconPath": "pages/image/message-noselect.png",
+        "selectedIconPath": "pages/image/message-select.png",
+        "text": "消息"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "iconPath": "pages/image/person-noselect.png",
+        "selectedIconPath": "pages/image/person-select.png",
+        "text": "个人中心"
+      }
+    ]
+  }
+}

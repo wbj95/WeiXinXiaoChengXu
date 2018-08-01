@@ -1,0 +1,93 @@
+<view class="container">
+  <view class="page-body">
+    <view class=" swiper">
+      <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}" interval="{{interval}}" duration="{{duration}}" previous-margin="0px" next-margin="0px">
+        <block wx:for="{{background}}" wx:key="*this">
+          <swiper-item>
+            <navigator>
+              <image src="{{item.url}}" class="slide-image" mode="widthFix" />
+              <view class='activity-item-text'>
+                <text>{{item.title}}</text>
+              </view>
+            </navigator>
+
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+
+    <view class='quick-entry'>
+
+      <view class='quick-entry-new'>
+        <navigator url='../news/newslist'>
+          <view class='logo'>
+            <image src='../image/read-new.png'></image>
+          </view>
+          <text>空电头条</text>
+        </navigator>
+      </view>
+
+      <view class='quick-entry-activity'>
+        <navigator url='../activity/activitylist'>
+          <view class='logo'>
+            <image src='../image/quick-activity.png'></image>
+          </view>
+          <text>活动组织</text>
+        </navigator>
+      </view>
+
+
+    </view>
+
+    <view class="kongdiannews">
+      <span class="toutiao">
+        <image class='kongdian-image' src='../image/new2.png' />空电头条</span>
+      <navigator url='../news/newslist'>
+        <view class="seemore">查看更多</view>
+      </navigator>
+
+
+    </view>
+    <block>
+
+      <view class="news-item" wx:for="{{listnews}}">
+        <navigator url="">
+          <view class="news-item-pic">
+            <image mode="widthFix" src="{{item.url}}" class="news-item-image" width="" height=""></image>
+          </view>
+          <view class="news-item-words">
+            <view class="news-item-title">
+              <text>{{item.title}}</text>
+            </view>
+            <view class="news-item-content">
+              <text>   {{item.content}}  </text>
+            </view>
+          </view>
+        </navigator>
+      </view>
+
+
+    </block>
+    <block>
+      <view class='activity'>
+        <span class='activity-span'>
+          <image class='activity-image' src="../image/activity.png" />活动组织</span>
+        <navigator url='../activity/activitylist'>
+          <view class='seemore'>查看更多</view>
+        </navigator>
+      </view>
+
+      <view class='activity-body'>
+        <view class='activity-item' wx:for='{{listactivity}}'>
+          <image src='{{item.url}}'></image>
+          <view class='activity-item-text'>
+            <text>{{item.title}}</text>
+          </view>
+        </view>
+
+      </view>
+
+
+    </block>
+  </view>
+</view>
