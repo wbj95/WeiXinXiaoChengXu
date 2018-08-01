@@ -4,7 +4,7 @@
       <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}" interval="{{interval}}" duration="{{duration}}" previous-margin="0px" next-margin="0px">
         <block wx:for="{{background}}" wx:key="*this">
           <swiper-item>
-            <navigator>
+            <navigator url='../news/news-details/news-details'>
               <image src="{{item.url}}" class="slide-image" mode="widthFix" />
               <view class='activity-item-text'>
                 <text>{{item.title}}</text>
@@ -51,7 +51,7 @@
     <block>
 
       <view class="news-item" wx:for="{{listnews}}">
-        <navigator url="">
+        <navigator url="../news/news-details/news-details">
           <view class="news-item-pic">
             <image mode="widthFix" src="{{item.url}}" class="news-item-image" width="" height=""></image>
           </view>
