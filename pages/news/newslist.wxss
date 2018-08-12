@@ -39,6 +39,19 @@
     text-overflow:ellipsis; 
     color: #a9a9a9;
 }
+.news-item-date{
+  font-size: 10pt;
+    line-height: 13pt;
+    text-overflow:ellipsis; 
+    color: #a9a9a9;
+}
+.news-item-time{
+  font-size: 10pt;
+    line-height: 13pt;
+    text-overflow:ellipsis; 
+    color: #a9a9a9;
+   
+}
 .news-more-line {
     padding-left: -26rpx important;
 }

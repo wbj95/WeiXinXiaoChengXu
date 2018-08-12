@@ -206,9 +206,7 @@ swiper{
     float:left;
 }
 .news-item {
-    margin: 10rpx 0 10rpx 0;
-    
-    background-color: #fff;
+   word-break:break-all; overflow:auto;
 }
 .news-item-image {
     width: 100%;

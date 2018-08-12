@@ -2,17 +2,19 @@
 <view class="news">
         <text class="news-title">新闻动态</text>
 
-        <block wx:for="{{news}}">
-        <navigator url="">
+        <block wx:for="{{news}}" >
+       <navigator url='news-details/news-details?id={{item.id}}'>
         <view class="news-item">
             <view class="news-item-pic">
-                <image mode="widthFix" src="{{item.src}}" class="news-item-image" width="" height=""></image>
+                 <image mode="widthFix" src="{{item.imageUrl}}" class="news-item-image" width="" height=""></image> 
             </view>
             <view class="news-item-words">
                 <view class="news-item-title"><text>{{item.title}}</text></view>
                 <view class="news-item-content"><text>{{item.content}}</text></view>
+                
+                <text class='news-item-time'>{{item.lastEditDate}}</text>
             </view>
         </view>
-        </navigator>
+      </navigator>
         </block>
     </view>

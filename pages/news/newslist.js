@@ -1,70 +1,93 @@
 // pages/news/newslist.js
 Page({
 
-  /**
-   * 页面的初始数据
-   */
-  data: {
-  news:[
-    { src: '../image/11.jpg', title:'上汽通用五菱560全新上市',content:'1234564'},
-    { src: '../image/22.jpg', title: '宝骏基地建成投产', content: '45678dry' },
-    { src: '../image/33.jpg', title: '五菱家族全新亮相', content: 'asfzxcb' }
-  ]
-  },
+    /**
+     * 页面的初始数据
+     */
+    data: {
+       
+    },
+   
+    /**
+     * 生命周期函数--监听页面加载
+     */
+    onLoad: function (options) {
+      var that = this;
+      wx.request({
+        url: 'http://localhost:8081/news/listnews',
+       
+        method: "GET",
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-  
-  },
+        success: function (res) {
+          console.log(res.data)
+          var list = res.data;
+          
+          if (list == null) {
+            var toastText = '获取数据失败' + res.data.errMsg;
+            wx.showToast({
+              title: toastText,
+              icon: '',
+              duration: 2000
+            });
+          } else {
+            that.setData({
+              news: res.data.newsList
+            });
+           
+          }
+        }
+      })
+     
+    },
+   
+    /**
+     * 生命周期函数--监听页面初次渲染完成
+     */
+    onReady: function () {
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-  
-  },
+    },
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-  
-  },
+    /**
+     * 生命周期函数--监听页面显示
+     */
+    onShow: function () {
+      
+    },
 
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-  
-  },
+    /**
+     * 生命周期函数--监听页面隐藏
+     */
+    onHide: function () {
 
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-  
-  },
+    },
 
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-  
-  },
+    /**
+     * 生命周期函数--监听页面卸载
+     */
+    onUnload: function () {
 
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-  
-  },
+    },
 
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-  
-  }
+    /**
+     * 页面相关事件处理函数--监听用户下拉动作
+     */
+    onPullDownRefresh: function () {
+
+    },
+
+    /**
+     * 页面上拉触底事件的处理函数
+     */
+    onReachBottom: function () {
+
+    },
+
+    /**
+     * 用户点击右上角分享
+     */
+    onShareAppMessage: function () {
+
+    }
+    
+
 })

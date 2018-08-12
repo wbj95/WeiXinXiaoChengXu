@@ -7,7 +7,9 @@
     "pages/unbind/unbind",
     "pages/news/newslist",
     "pages/activity/activitylist",
-    "pages/news/news-details/news-details"
+    "pages/news/news-details/news-details",
+    "pages/register/register",
+    "pages/Login/Login"
   ],
   "window": {
     "backgroundTextStyle": "light",
